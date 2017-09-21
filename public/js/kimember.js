@@ -1,8 +1,7 @@
 
-var categoryNumber = 5;
-var maxValue = 200;
-var postingProbability = 0.0001;
-function KiMember() {
+var postingProbability = 0.005; //000
+function KiMember(givenName) {
+    this.name = givenName;
     this.number = categoryNumber;
     this.category = new Array(this.number);
     for(var k = 0; k < this.number; k++)
